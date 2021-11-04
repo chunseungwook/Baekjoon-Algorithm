@@ -1,18 +1,15 @@
 import sys
 N = int(sys.stdin.readline())
+num = N
 count = 0
 
 while True:
-    a = N//10
-    b = N%10
+    a = num //10
+    b = num % 10
     sum=a+b
-    sum%10
-    
-    if (b*10+(sum%10)):
-        count+=1
-    else:
-        count+=1
-        
-    print(count)
-    break
-dL =0 
+    sum_b = sum%10
+    num = (b*10+(sum_b))
+    count+=1
+    if (num == N):
+        break    
+print(count)
