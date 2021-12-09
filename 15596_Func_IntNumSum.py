@@ -1,10 +1,17 @@
-def Sum_ListNum(list_Num):
+"""def Sum_ListNum(list_Num):
     import sys
     list_Num = list(map(int,sys.stdin.readline().split()))
     sum = 0
     for i in list_Num:
         sum += i
     return sum
-a=[]
-print(Sum_ListNum(a))
-# a list n 은 a의 종속 그리고 합
+"""
+def solve(a):
+    #import sys
+    #a = list(map(int,sys.stdin.readline().split()))
+    ans = 0
+    for i in a:
+        ans += i
+    return ans
+b=[]
+print(solve(b))
